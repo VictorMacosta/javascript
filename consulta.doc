@@ -1,0 +1,37 @@
+alert('Hola! Te hare unas preguntas para ver que tan bien te alimentas')
+let pregunta1 = prompt('elije una de las siguientes comidas arepas, medialunas, tacos').toLowerCase()
+while(pregunta1 != 'gracias'){
+    switch (pregunta1) {
+        case 'arepas':
+            alert('Que rico unas arepas')
+            let pregunta2 = prompt('Ahora dime cual de estas prefieres: patacon o pabellon').toLowerCase()
+            while(pregunta2 != 'pabellon' && pregunta2 != 'patacon'){
+                switch (pregunta2) {
+                    case 'pabellon':
+                        alert('region llanera')
+                        break;
+                    case 'patacon':
+                        alert(maracaibo)
+                        break;    
+                
+                    default:
+                        break;
+                }
+            }
+            
+            break;
+    
+        case 'fideos':
+            alert('Fideosssss')
+            break;
+        
+        case 'carne':
+            alert('No hat nada mejor')
+            break;
+    
+        default:
+            alert('Lo siento, no he probado ese plato aun pero lo tendre en cuenta')
+            pregunta1 = prompt('elije una de las siguientes comidas: arepas, fideos, carne')           
+            break;
+    }
+}
