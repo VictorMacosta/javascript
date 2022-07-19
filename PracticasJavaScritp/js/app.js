@@ -1,118 +1,71 @@
-// alert("preguntas de tu alimentacion")
-// prompt("Sueles desayunar?")
-
-// el if else if y el else 
-// 
-// let entrda = prompt("dame una letra")
-// let salida ="tu letra es"  + " " + entrda
-// alert (salida)
-// if (entrda == 't'){
-//     alert('Muy bien')
-// }else if (entrda == 'm'){
-//     alert('Buena eleccion')
-// }else{
-//     alert("esta letra no es lo que quiero")
-// }
-// const adivinanza = prompt ('que viene despues del sol?')
-// if (adivinanza == 'la luna'){
-//     alert('muy bien la luna es lo que viene despues del sol')
-// }else if (adivinanza == 'noche'){
-//     alert('trata de ser mas claro')
-// }else{
-//     alert('respondeme coño')
-// }
-// const elije = prompt('dime dos cosas que te gusten')
-// if (elije >= 20 && elije <= 40 ){
-//     alert('te doy');
-// } else if (elije < 20 ){
-//     alert('no lo creo');
-// }else if (elije  && elije > 40){
-//     alert('no lo creo')
-// }else('dime tu edad')
-// operadores matematicos
-// const positivo = 1 != 1
-// const negativo = 1 != 2
-// if (prompt(positivo)){
-//     alert('1 siempre va a ser igual a 1') 
-// }
-
-// valores estrictos
-// let dato = Number(22)
-// let valorUnico = prompt('dame un numero')
-// if (valorUnico === dato){
-//     alert('falso')
-// }
-
-// Ahora vamos con los bucles y las iteraciones
-
-// bucle for
-// for(let tablaDeMultiplicar = 2; tablaDeMultiplicar < 60; tablaDeMultiplicar = tablaDeMultiplicar + 2)
-// console.log(tablaDeMultiplicar)
-// let unNumero = Number(prompt('ingresa un numero'))
-// for (let i = 1; i <= 10; i = i + 1){
-//     let resultado = unNumero * i;
-//     console.log(unNumero + ' x ' + i + ' = ' + resultado)
-// }
-
-// ciclo while
-
-// let dameUndato = prompt('ingresa un dato amigo')
-//  while(dameUndato != 'amigo' && dameUndato != 'amistad' && dameUndato != 'vida'){
-//      alert('prueba de nuevo')
-//      dameUndato = prompt('dame otro dato amigo')
-//  }
-//  alert('genial! saliste del bucle')
-
 // operador switch
-alert('Hola! Te hare unas preguntas para ver que tan bien te alimentas')
-let pregunta1 = prompt('elije una de las siguientes comidas arepas, medialunas, tacos').toLowerCase()
-while(pregunta1 != 'gracias'){
-    switch (pregunta1) {
+alert('Hola! Te mostrare unos platos tipicos de alguna parte del mundo')
+let pregunta1 = prompt('elije una de las siguientes comidas arepas, medialunas, tacos o "gracias" para salir ').toLowerCase()
+while(pregunta1 != 'gracias')
+{
+    switch (pregunta1)
+    {
         case 'arepas':
-            alert('Que rico unas arepas')
+            alert('Que rico! arepas. Las arepas son el desayuno mas popular en todo el pais venezolano')
             let pregunta2 = prompt('Ahora dime cual de estas prefieres: patacon o pabellon').toLowerCase()
-            while(pregunta2 != 'pabellon' && pregunta2 != 'patacon'){
-                switch (pregunta2) {
-                    case 'pabellon':
-                        alert('region llanera')
-                        break;
-                    case 'patacon':
-                        alert(maracaibo)
-                        break;    
+            switch (pregunta2)
+            {
+                case 'pabellon':
+                alert('El pabellon es una comida tipica de los llanos venezolanos');
+                break;
+
+                case 'patacon':
+                alert('El patacon es una de los platos mas consumidos en la ciudad de Maracaibo, Venezuela.');
+                break;    
                 
-                    default:
-                        break;
-                }
+                default:
+                alert('opcion invalida');
+                break;
             }
-            
             break;
     
-        case 'fideos':
-            alert('Fideosssss')
+        case 'medialunas':
+            alert('Las medialunas son unos de los desayunos y meriendas mas populares en la Ciudad Autonoma de Buenos Aires.');
+            let pregunta3 = prompt('Ahora elije una de estas: locro, asado')
+            switch (pregunta3)
+            {
+                case 'locro':
+                    alert('Plato tipico de la ciudad de Salta y alrededores.');                    
+                    break;
+
+                case 'asado':
+                    alert('Es el plato perfecto para reuniones familiares en la Ciudad Autonoma de Buenos Aires.');                             
+                    break;        
+            
+                default:
+                    alert('opcion invalida');
+                    break;
+            }
             break;
         
-        case 'carne':
-            alert('No hat nada mejor')
+        case 'tacos':
+            alert('Los tacos es una comida referente de Mexico.');
+            let pregunta4 = prompt('Ahora elije una de estas: cabrito o machaca')
+            switch (pregunta4) 
+            {
+                case 'cabrito':
+                    alert('El cabrito es el plato numero uno en la lista de comidas tipicas de Monterrey, Mexico.');
+                    break;
+                case 'machaca':
+                    alert('La machaca es el plato numero uno en la lista de comidas tipicas de Sonora, Mexico.');
+                    break;
+                default:
+                    alert('opcion invalida')
+                    break;
+            }
             break;
     
         default:
-            alert('Lo siento, no he probado ese plato aun pero lo tendre en cuenta')
-            pregunta1 = prompt('elije una de las siguientes comidas: arepas, fideos, carne')           
+            alert('Lo siento, no he probado ese plato aun pero lo tendre en cuenta')       
             break;
     }
+    pregunta1 = prompt('elije una de las siguientes comidas arepas, medialunas, tacos o "gracias" para salir ').toLowerCase()
 }
+alert('genial, saliste del ciclo')
 
-
-    
-// if(pregunta1 == 'arepas'){
-//     alert('Que buena eleccion, arepas!!')
-//     }else if(pregunta1 == 'medialunas'){
-//         alert('Que buen gusto, medialunas')
-//     }else if(pregunta1 == 'tacos'){
-//         alert('Que rico, tacosss')
-//     }else{
-//         alert('no he probado ese plato, lo tendre en cuenta')
-//         pregunta1 = prompt('elije una de las siguientes comidas arepas, medialunas, tacos').toLowerCase()
-    
-//     }
 

@@ -1,3 +1,74 @@
+// alert("preguntas de tu alimentacion")
+// prompt("Sueles desayunar?")
+
+// el if else if y el else 
+// 
+// let entrda = prompt("dame una letra")
+// let salida ="tu letra es"  + " " + entrda
+// alert (salida)
+// if (entrda == 't'){
+//     alert('Muy bien')
+// }else if (entrda == 'm'){
+//     alert('Buena eleccion')
+// }else{
+//     alert("esta letra no es lo que quiero")
+// }
+// const adivinanza = prompt ('que viene despues del sol?')
+// if (adivinanza == 'la luna'){
+//     alert('muy bien la luna es lo que viene despues del sol')
+// }else if (adivinanza == 'noche'){
+//     alert('trata de ser mas claro')
+// }else{
+//     alert('respondeme coño')
+// }
+// const elije = prompt('dime dos cosas que te gusten')
+// if (elije >= 20 && elije <= 40 ){
+//     alert('te doy');
+// } else if (elije < 20 ){
+//     alert('no lo creo');
+// }else if (elije  && elije > 40){
+//     alert('no lo creo')
+// }else('dime tu edad')
+// operadores matematicos
+// const positivo = 1 != 1
+// const negativo = 1 != 2
+// if (prompt(positivo)){
+//     alert('1 siempre va a ser igual a 1') 
+// }
+
+// valores estrictos
+// let dato = Number(22)
+// let valorUnico = prompt('dame un numero')
+// if (valorUnico === dato){
+//     alert('falso')
+// }
+
+// Ahora vamos con los bucles y las iteraciones
+
+// bucle for
+// for(let tablaDeMultiplicar = 2; tablaDeMultiplicar < 60; tablaDeMultiplicar = tablaDeMultiplicar + 2)
+// console.log(tablaDeMultiplicar)
+// let unNumero = Number(prompt('ingresa un numero'))
+// for (let i = 1; i <= 10; i = i + 1){
+//     let resultado = unNumero * i;
+//     console.log(unNumero + ' x ' + i + ' = ' + resultado)
+// }
+
+// ciclo while
+
+// let dameUndato = prompt('ingresa un dato amigo')
+//  while(dameUndato != 'amigo' && dameUndato != 'amistad' && dameUndato != 'vida'){
+//      alert('prueba de nuevo')
+//      dameUndato = prompt('dame otro dato amigo')
+//  }
+//  alert('genial! saliste del bucle')
+
+
+
+                Esta es la version con fallas del desafio complementario de "ciclos e iteraciones"
+
+                
+
 alert('Hola! Te hare unas preguntas para ver que tan bien te alimentas')
 let pregunta1 = prompt('elije una de las siguientes comidas arepas, medialunas, tacos').toLowerCase()
 while(pregunta1 != 'gracias'){
@@ -35,3 +106,16 @@ while(pregunta1 != 'gracias'){
             break;
     }
 }
+
+    
+// if(pregunta1 == 'arepas'){
+//     alert('Que buena eleccion, arepas!!')
+//     }else if(pregunta1 == 'medialunas'){
+//         alert('Que buen gusto, medialunas')
+//     }else if(pregunta1 == 'tacos'){
+//         alert('Que rico, tacosss')
+//     }else{
+//         alert('no he probado ese plato, lo tendre en cuenta')
+//         pregunta1 = prompt('elije una de las siguientes comidas arepas, medialunas, tacos').toLowerCase()
+    
+//     }
