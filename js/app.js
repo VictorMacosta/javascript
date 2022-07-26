@@ -91,9 +91,9 @@ function desayuno(){
 }
 
 
-function almuerzoVe(pabellon, patacon) {
+function almuerzoVe() {
     alert('desayuno venezolano')
-    let segundaComida = prompt('ahora elije una de estas: pabellon, patacon o escribe "salir" para terminar')
+    let segundaComida = prompt('ahora elije una de estas: pabellon, patacon')
         switch (segundaComida) {
             case 'pabellon':
                 alert('region del llano')
@@ -103,7 +103,6 @@ function almuerzoVe(pabellon, patacon) {
                 alert('maracaibo')
                 break;
     
-        
             default:
                 alert('opcion invalida')
                 break;
@@ -111,10 +110,10 @@ function almuerzoVe(pabellon, patacon) {
     }
 
 
-function almuerzoArg (asado, locro){
+function almuerzoArg (){
     alert('desayuno argentino')
-    let segundaComida = prompt('ahora elije una de estas: asado, locro o escribe "salir" para terminar')
-        switch (segundaComida) {
+    let terceraComida = prompt('ahora elije una de estas: asado, locro ')
+        switch (terceraComida) {
             case 'asado':
                 alert('cuidad autonoma de buenos aires')
                 break;
@@ -129,10 +128,10 @@ function almuerzoArg (asado, locro){
         }
     }
 
-function almuerzoMex (cabrito, machaca){
+function almuerzoMex (){
     alert('desayuno mexicano')
-    let segundaComida = prompt('ahora elije una de estas: cabrito, machaca o escribe "salir" para terminar')
-        switch (segundaComida) {
+    let cuartaComida = prompt('ahora elije una de estas: cabrito, machaca')
+        switch (cuartaComida) {
             case 'cabrito':
                 alert('monterrey')
                 break;
@@ -147,12 +146,10 @@ function almuerzoMex (cabrito, machaca){
         }
     }
 
+let bienvenido = prompt('Hola, estas a punto de entrar en un ciclo que te dira de donde vienen algunas comidas elije una de las siguientes: arepa, medialuna, taco, si no quieres participar escribe "gracias" para salir')
 
-let salida = prompt('Hola, estas a punto de entrar en un ciclo que te dira de donde vienen algunas comidas, si no quieres participar escribe "gracias" para salir')
-
-let bienvenido = prompt('elije una de las siguientes: arepa, medialuna, taco')
-while(salida != 'gracias'){
+while(bienvenido != 'gracias'){
     desayuno()
-
+    bienvenido = prompt('elije una de las siguientes: arepa, medialuna, taco o escribe "gracias" para salir')
 }
 alert('genial, saliste del bucle')
